@@ -10,7 +10,7 @@ def get_posts():
     payload = {}
     headers = {}
     response = requests.request("GET", url, headers=headers, data=payload)
-    return jsonify({"data": response.json(), "status": "success", "status_code": 288})
+    return jsonify({"data": response.json(), "status": "successfully triggered auto-deployment", "status_code": 288})
 
 
 @app.route("/comments")
